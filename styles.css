@@ -10,16 +10,13 @@ html, body {
     width: 100vw;  
     display: flex;
     flex-direction: column;
-    background-color: #000000;
   }
 
 div.row {
-    background-color: black;
     height: 50vh;
 }
 
 div.frames-sounding {
-    background-color: white;
     margin: 0px;
     padding: 0px;
 }
@@ -30,27 +27,21 @@ div.frames-standard {
 }
 
 iframe.sat {
-    height: 100%;
+    height: 50vh;
     width: 100%;
 }
 
 img.outlook {
-    height: 100%;
+    height: 50vh;
     width: 100%;
-    object-fit: cover;
-    object-position: center
 }
 
 img.warnings {
-    height: 100%;
+    height: 50vh;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
 img.sounding {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+    height: 50vh;
+    width:100%;
 }
