@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+  .main-container {
+    height: 100vh; 
+    width: 100vw;  
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+  }
+
+div.row {
+    background-color: black;
+    height: 50vh;
+}
+
+div.frames-sounding {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.frames-standard {
+    margin: 0px;
+    padding: 0px;
+}
+
+iframe.sat {
+    height: 100%;
+    width: 100%;
+}
+
+img.outlook {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+img.warnings {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+img.sounding {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
