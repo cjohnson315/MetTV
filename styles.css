@@ -26,22 +26,7 @@ div.frames-standard {
     padding: 0px;
 }
 
-iframe.sat {
+img.img-fluid {
     height: 50vh;
     width: 100%;
-}
-
-img.outlook {
-    height: 50vh;
-    width: 100%;
-}
-
-img.warnings {
-    height: 50vh;
-    width: 100%;
-}
-
-img.sounding {
-    height: 50vh;
-    width:100%;
 }
