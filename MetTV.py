@@ -3,11 +3,13 @@
 
 import imageio.v3 as iio
 import os.path
+import time
+
+startTime = time.time()
 
 # Get latest satellite image from NOAA
-webImg = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/latest.jpg"
+webImg = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/2500x1500.jpg"
 img = iio.imread(webImg)
-
 
 # Choose desired file name for GIF
 gifPath ="satLoop.gif"
@@ -24,7 +26,8 @@ elif os.path.isfile(gifPath):
         frames = []
         for frame in framesRaw:
             frames.append(frame)
-            
+        # Sleep to try to identify bug
+        time.sleep(10)
         # If imagery spans less than 2 hr, append without editing
         if len(frames) < 26:
             frames.append(img)
@@ -43,3 +46,8 @@ elif os.path.isfile(gifPath):
 # If the file does not either exist or not exist, something is wrong
 else:
     print("File error")
+
+endTime = time.time()
+elapsedTime = endTime - startTime
+
+print("Script execution time:", elapsedTime)
